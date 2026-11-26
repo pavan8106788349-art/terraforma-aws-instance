@@ -1,3 +1,4 @@
+
 resource "aws_instance" "example" {
   ami           = var.ami_id
   instance_type = var.instance_type
@@ -33,5 +34,6 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow-all-terraform"
   }
 }
+
 
 
